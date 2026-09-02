@@ -6,8 +6,7 @@ export default defineConfig({
   },
   tanstackStart: {
     prerender: {
-      enabled: true,
-      crawlLinks: true,
+      enabled: false,
     },
   },
   nitro: {
