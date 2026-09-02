@@ -16,7 +16,10 @@ export default defineConfig({
     viteTsConfigPaths({ projects: ["./tsconfig.json"] }),
     tailwindcss(),
     tanstackStart({
-      prerender: { enabled: false },
+      prerender: {
+        enabled: true,
+        crawlLinks: true,
+      },
     }),
     viteReact(),
   ],
